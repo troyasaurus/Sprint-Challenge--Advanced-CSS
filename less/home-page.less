@@ -1,9 +1,14 @@
 // Home Content
 
 .home {
-
+  
   .intro {
 
+    #header-img{
+      width: 100%;
+      margin-top: 20%;
+  }
+    
     h2 {
       padding: 15px;
     }
@@ -58,7 +63,19 @@
       }
 
       .btn {
+        display:flex;
+        justify-content: center;
+        .btn-mixin(rgb(2, 2, 39), white, 15px);
+        .border(10px);
+        width: 30%;
+        font-size: 1.5rem;
+        
+      } 
+      .btn:hover{
+        background-color: white;
+        color:rgb(2, 2, 39);
       }
+    
     }
 
     .walk-img {
@@ -72,4 +89,35 @@
       }
     }
   }
-}// home
+  @media @phone{
+    #header
+    .space-images{
+        .sky, .launch{
+          display: none;
+        }
+      .blast{
+        width: 90%;
+      }
+    }
+
+    .walk{
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      
+
+
+        .walk-text{
+          width: 100%;
+        }
+        .walk-img{
+          width: 100%;
+        }
+        .btn{
+          width: 90%;
+        }
+    }  
+  }
+  
+}
