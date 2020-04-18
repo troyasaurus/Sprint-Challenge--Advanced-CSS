@@ -275,11 +275,11 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home #header .space-images .sky,
-  .home #header .space-images .launch {
+  .home .space-images .sky,
+  .home .space-images .launch {
     display: none;
   }
-  .home #header .space-images .blast {
+  .home .space-images .blast {
     width: 90%;
   }
   .home .walk {
@@ -293,8 +293,5 @@ footer {
   }
   .home .walk .walk-img {
     width: 100%;
-  }
-  .home .walk .btn {
-    width: 90%;
   }
 }
